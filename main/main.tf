@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 module "test_bucket" {
-  source      = "/home/ubuntu/terraform-training/task-1/s3-bucket/s3_bucket_module"
+  source      = "/home/ubuntu/terraform-training/task-1/modules/s3_bucket_module"
   bucket_name = "roshan-test-bucket-2025-01-22"
   versioning  = true
   tags = {
@@ -22,3 +22,5 @@ resource "aws_subnet" "my_public_subnet_1" {
   cidr_block        = "10.0.1.0/24"
   map_public_ip_on_launch = true
 }
+
+
