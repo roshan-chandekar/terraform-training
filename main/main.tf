@@ -33,3 +33,12 @@ module "test_sg_1" {
   vpc_id  = "vpc-0d3e9a5f8c47f089d"
 }
 
+module "elb" {
+  source          = "../modules/elb"
+  elb_name        = "test_elb"
+  security_groups = ["sg-0123456789abcdef0"]
+  subnet_ids      = ["subnet-0a1b2c3d4e5f6g7h", "subnet-1a2b3c4d5e6f7g8h"]
+  vpc_id          = "vpc-12345678"
+  instance_ids    = ["i-0a1b2c3d4e5f6g7h"]
+}
+
