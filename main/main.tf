@@ -26,3 +26,10 @@ resource "aws_subnet" "my_public_subnet_1" {
 module "iam" {
   source = "/home/ubuntu/terraform-training/modules/iam"
 }
+
+module "test_sg_1" {
+  source  = "../modules/security_group"  # Path to the module
+  sg_name = "test_sg_1"
+  vpc_id  = "vpc-0d3e9a5f8c47f089d"
+}
+
