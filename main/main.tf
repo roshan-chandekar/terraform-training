@@ -35,10 +35,10 @@ module "test_sg_1" {
 
 module "elb" {
   source          = "../modules/elb"
-  elb_name        = "test_elb"
-  security_groups = ["sg-0123456789abcdef0"]
-  subnet_ids      = ["subnet-0a1b2c3d4e5f6g7h", "subnet-1a2b3c4d5e6f7g8h"]
-  vpc_id          = "vpc-12345678"
-  instance_ids    = ["i-0a1b2c3d4e5f6g7h"]
+  elb_name        = "test-elb"
+  security_groups = ["sg-0a419df4cfdb4270d"]
+  subnet_ids      = ["subnet-07f1ebd0b4c84ac7e", "subnet-0dc9da56c1a2e57f6"]
+  vpc_id          = "vpc-0d3e9a5f8c47f089d"
+  instance_ids    = ["i-00841213aaea22e4b"]
 }
 
