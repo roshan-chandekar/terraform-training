@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 module "test_bucket" {
-  source      = "./s3_bucket_module"
+  source      = "/home/ubuntu/terraform-training/task-1/s3-bucket/s3_bucket_module"
   bucket_name = "roshan-test-bucket-2025-01-22"
   versioning  = true
   tags = {
