@@ -30,3 +30,14 @@ Step-06: Associate Public Subnet in Route Table
     Click on Edit Subnet Associations
     Select my-public-subnet-1
     Click on Save
+
+
+
+####################################################
+Manually created resources to be import inn tf state file
+added resource in main.tf file to know these are resource to be added during import
+
+
+
+terraform import aws_vpc.my_manual_vpc vpc-0d3e9a5f8c47f089d
+terraform import aws_subnet.my_public_subnet_1 subnet-07f1ebd0b4c84ac7e
